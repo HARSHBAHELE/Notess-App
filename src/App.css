@@ -1,0 +1,90 @@
+h4 {
+  font-size: 15px;
+  margin-top:3px;
+}
+#main {
+  margin-top: 12px;
+}
+.nav-item {
+  margin-left: 20px;
+}
+#Submit {
+  width: 140px;
+}
+i{
+  cursor: pointer;
+}
+#dan {
+  color: red;
+}
+#form1 {
+  height: 400px;
+  border: 1px solid rgb(202, 198, 198);
+  width: 400px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#form2 {
+  height: 480px;
+  border: 1px solid rgb(201, 199, 199);
+  width: 400px;
+  border-radius: 10px;
+  margin-top: 0px;
+}
+#loginnn {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#email {
+  width: 350px;
+  margin-left: 20px;
+}
+#cpassword {
+  width: 350px;
+  margin-left: 20px;
+}
+#name {
+  width: 350px;
+  margin-left: 20px;
+}
+#label1 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#label3 {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+#label2 {
+  margin-left: 20px;
+}
+#password {
+  width: 350px;
+  margin-left: 20px;
+}
+.conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imp {
+  margin-left: 780px;
+}
+#btnnn {
+  margin-left: 10px;
+}
+#btn3 {
+  margin-left:880px;
+}
+@media screen and (max-width: 768px) {
+  #imp {
+      margin-left: 20px; /* Adjust as needed */
+  }
+  #btnnn {
+      margin-left: 5px; /* Adjust as needed */
+  }
+  #btn3 {
+      margin-left: 10px; /* Adjust as needed */
+  }
+}
