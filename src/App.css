@@ -29,7 +29,6 @@ i{
   border: 1px solid rgb(201, 199, 199);
   width: 400px;
   border-radius: 10px;
-  margin-top: 0px;
 }
 #loginnn {
   text-align: center;
@@ -76,15 +75,4 @@ i{
 }
 #btn3 {
   margin-left:880px;
-}
-@media screen and (max-width: 768px) {
-  #imp {
-      margin-left: 20px; /* Adjust as needed */
-  }
-  #btnnn {
-      margin-left: 5px; /* Adjust as needed */
-  }
-  #btn3 {
-      margin-left: 10px; /* Adjust as needed */
-  }
 }

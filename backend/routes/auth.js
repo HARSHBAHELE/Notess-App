@@ -55,17 +55,17 @@ router.post('/login', [
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() })
     }
-    const { email, password } = req.body;
+    const { email,password} = req.body;
     try {
         let user = await User.findOne({ email })
         if (!user) {
             sucess=false
             return res.status(400).json({ errors: "Try to login with correct username" });
         }
-        const passwordCompare = bcrypt.compare(password, user.password)
+        const passwordCompare = await bcrypt.compare(password, user.password)
         if (!passwordCompare) {
             sucess=false
-            return res.status(400).json({sucess, errors: "Try to login with correct username" });
+            return res.status(400).json({sucess, errors: "Try to login with correct Password" });
         }
         const data = {
             user: {
@@ -96,4 +96,5 @@ router.post('/getUser', fetchUser, [], async (req, res) => {
         res.status(500).json({ error: "Server error" })
     }
 })
+
 module.exports = router

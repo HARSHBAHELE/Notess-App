@@ -15,13 +15,12 @@ function Login(props) {
             body: JSON.stringify({email:credentials.email, password:credentials.password }),
         });
         const json = await response.json();
-        console.log(json)
         if(json.sucess) {
             localStorage.setItem('token',json.authData)
             history('/')
            props.showAlert(" Login SuccessFully","success")
         } else {
-            props.showAlert("Invalid Cridantiols","danger")
+            props.showAlert("Enter Correct Password","danger")
         }
     }
     const onChange = (e)=> {

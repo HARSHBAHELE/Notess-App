@@ -43,9 +43,7 @@ const NoteState = (props) => {
                 "auth-token":localStorage.getItem('token')
             },
         });
-        const json = await response1.json();
-        console.log(json)
-        console.log("Delating a note", id)
+        const json = await response1.json();        console.log("Delating a note", id)
         const newNotes = notes.filter((note) => { return note._id !== id });
         setNotes(newNotes)
     }
@@ -71,8 +69,6 @@ const NoteState = (props) => {
             body: JSON.stringify({ title, description, tag }),
         });
         const json = await response1.json();
-        console.log(json)
-
         let newNotes = JSON.parse(JSON.stringify(notes))
         for (let index = 0; index < newNotes.length; index++) {
             const element = newNotes[index];
