@@ -7,7 +7,7 @@ function Login(props) {
        const [credentials, setCredentials] = useState({email:"",password:""});
     let handelSubmit = async(e)=> {
         e.preventDefault();
-        const response = await fetch(`http://localhost:9000/api/auth/login`, {
+        const response = await fetch(`https://i-note-book-app-xi.vercel.app/api/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

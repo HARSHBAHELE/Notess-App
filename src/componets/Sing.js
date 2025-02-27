@@ -8,7 +8,7 @@ function Sing(props) {
        const [credentials, setCredentials] = useState({email:"",password:"",name:'',cpassword:''});
     let handelSubmit = async(e)=> {
         e.preventDefault();
-        const response = await fetch(`http://localhost:9000/api/auth/createUser`, {
+        const response = await fetch(`https://i-note-book-app-xi.vercel.app/api/auth/createUser`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
